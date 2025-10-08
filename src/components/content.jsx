@@ -1,14 +1,17 @@
-// Define Content component as an arrow function
-const Content = ()=>{
+// Define the Content component using an arrow function
+const Content = () => {
 
-   return (
+  // JSX returned by the component
+  return (
     <div>
-          {/* Main heading */}
-      <h1>Hello from content componetns</h1>
-       {/* Display current time using JavaScript Date object */}
-       <h2>It is {new Date().toLocaleTimeString()}.</h2>
+      {/* Main heading for the Content component */}
+      <h1>Hello from Content Component!</h1>
+
+      {/* Display the current time dynamically using JavaScript's Date object */}
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
     </div>
   );
 }
-// Export Content so it can be imported in App.jsx
+
+// Export the Content component so it can be imported and used in App.jsx
 export default Content;
